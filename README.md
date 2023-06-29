@@ -1,6 +1,6 @@
 # premake-vspropertysheets
 ```lua
-require("premake-vspropertysheets.vspropertysheets")
+require("premake5-modules/vspropertysheets")
 workspace("MyWorkspace")
 	configurations({ "Debug", "Release" })
 project("MyProject")
