@@ -32,5 +32,9 @@ premake.override(p.vstudio.vc2010.elements, "project", function(base, prj)
 	return calls
 end)
 
+--
+-- 'thismodule' variables and functions
+--
+
 include("_preload")
 return m
