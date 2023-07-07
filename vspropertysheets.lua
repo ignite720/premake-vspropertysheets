@@ -1,5 +1,5 @@
 --
--- Create a 'thismodule' namespace to isolate the additions
+-- Create a `thismodule` namespace to isolate the additions
 --
 local p = premake
 
@@ -33,7 +33,7 @@ premake.override(p.vstudio.vc2010.elements, "project", function(base, prj)
 end)
 
 --
--- 'thismodule' variables and functions
+-- `thismodule` variables and functions
 --
 
 include("_preload")
