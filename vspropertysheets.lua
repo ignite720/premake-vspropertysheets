@@ -11,7 +11,7 @@ m._VERSION = "0.0.1"
 --
 -- Local functions
 --
-local function s_DoVSPropertySheets(prj)
+local function sDoVSPropertySheets(prj)
 	if prj.vspropertysheets ~= nil then
 		premake.push('<ImportGroup Label="PropertySheets">')
 		for i, v in ipairs(prj.vspropertysheets) do
@@ -28,7 +28,7 @@ require("vstudio")
 
 premake.override(p.vstudio.vc2010.elements, "project", function(base, prj)
 	local calls = base(prj)
-	table.insertafter(calls, p.vstudio.vc2010.importExtensionSettings, s_DoVSPropertySheets)
+	table.insertafter(calls, p.vstudio.vc2010.importExtensionSettings, sDoVSPropertySheets)
 	return calls
 end)
 
